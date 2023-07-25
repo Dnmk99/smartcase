@@ -10,11 +10,12 @@ span-title{
     line-height: 3rem;
 }
 
-.ms-section{
+.ao-section{
     width: 100%;
     
 }
-.ms-row{
+.ao-row{
+    gap: 3rem;
     width: 100%;
     height: auto;
     margin: auto;
@@ -24,13 +25,30 @@ span-title{
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-.ms-row-left{
-    width: 40%;
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+.ao-row-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.ms-row-right{
+.ao-row-left{
     width: 60%;
 }
-.ms-img{
+.ms-row-right{
+    width: 50%;
+}
+.ao-row-right{
+    width: 40%;
+    padding-top: 6rem;
+}
+.ao-img{
     width: 100%;
     height: auto;
 }
@@ -39,40 +57,40 @@ p{
     width: 80%;
     padding-top: 1rem;
 }
-.ms-1-row-2{
+.ao-1-row-2{
     background-image: url(../Images/svgs/ellipse-2.svg);
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 2rem;
 }
-.ms-row-buttons{
+.ao-row-buttons{
     width: 100%;
     display: flex;
     padding-top: 5rem;
 
 }
-.ms-grid-container{
+.ao-grid-container{
     /* max-width: 40rem; */
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    align-items: center;
-    justify-items: center;
+    align-iteao: center;
+    justify-iteao: center;
 }
-.ms-tile{
+.ao-tile{
     display: flex;
     width: 20rem;
     height: 8rem;
     justify-content: center;
-    align-items: center;
+    align-iteao: center;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     background-color: #F3F4F5;;
     border-radius: 16px;
 }
-.ms-image-wrapper {
+.ao-image-wrapper {
     padding: 1rem;
     width: 16rem;
     height: 6rem;
@@ -81,14 +99,14 @@ p{
     justify-content: start;
     position: relative;
 }
-.ms-tile{
+.ao-tile{
     background-position: center;
     width: 30rem;
     background-repeat: no-repeat;
     background-size: contain;
     height: 9rem;
 }
-.ms-tile-text{
+.ao-tile-text{
     color: #4A4A4C;
     /* padding: 0.5rem; */
     position: relative;
@@ -96,13 +114,15 @@ p{
     text-align: left;
 }
 @media (max-width: 1180px) {
-    .ms-row{
+    .ao-row{
         flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
-    .ms-row-left, .ms-row-right{
+    .ao-row-left, .ao-row-right{
         width: 100%;
     }
-    .ms-grid-container{
+    .ao-grid-container{
         grid-template-columns: 1fr;
     }
   }
