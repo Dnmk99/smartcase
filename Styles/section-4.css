@@ -1,0 +1,25 @@
+#section-4{
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#section-4-col-left, #section-4-col-right{
+    width: 50%;
+}
+@media (max-width: 1155px) {
+    .two-columns {
+        flex-basis: 100%;
+    }#section-4-col-left {
+        order: 2;
+    }
+    /* Set the order of right column to 1 on smaller screens */
+    #section-4-col-right {
+        order: 1;
+    }
+}

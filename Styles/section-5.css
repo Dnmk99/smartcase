@@ -1,0 +1,126 @@
+#section-5{
+    margin-top: 10rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#section-5-col-left, #section-5-col-right{
+    width: 50%;
+}
+.section-5-row-1{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1155px) {
+    .two-columns {
+        flex-basis: 100%;
+    }#section-5-col-left {
+        order: 2;
+    }
+    /* Set the order of right column to 1 on smaller screens */
+    #section-5-col-right {
+        order: 1;
+    }
+}
+.section-5-grid-container{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    grid-template-columns: repeat(auto-fill, 500px);
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.tile-5{
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.tile-text-blue-bald{
+    color: #226fb7;
+    font-weight: bold;
+}
+.tile-text-blue{
+    color: #226fb7;
+}
+.tile-text-yellow-bald{
+    color: #FBB800;
+    font-weight: bold;
+}
+.tile-text-yellow{
+    color: #FBB800;
+}
+.tile-text-red-bald{
+    color: #E5005A;
+    font-weight: bold;
+}
+.tile-text-red{
+    color: #E5005A;
+}
+.tile-text-green-bald{
+    color: #00A976;
+    font-weight: bold;
+}
+.tile-text-green{
+    color: #00A976;
+}
+.section-5-row-2{
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;   
+}
+.column-left-90p{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.column-right-10p{
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* On smaller screens, set the max-height to 100px */
+@media (min-width: 1225px) and (max-width: 2000px) {
+    .column-right-10p .svg {
+        max-height: 500px;
+    }
+}
+
+/* From 500px to 1350px, set the max-height to 500px */
+@media (max-width: 1224px) and (min-width: 768px) {
+    .column-right-10p .svg {
+        max-height: 200px;
+    }
+}
+
+/* Below 500px, set the max-height to 100px */
+@media (max-width: 767px) {
+    .column-right-10p .svg {
+        max-height: 100px;
+    }
+}
