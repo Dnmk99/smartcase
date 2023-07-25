@@ -1,20 +1,20 @@
 span-title-bold{
     font-size: 350%;
     font-weight: bold;
-    color: #226FB7;
+    color: #E5005A;
     line-height: 3rem;
 }
 span-title{
     font-size: 350%;
-    color: #226FB7;
+    color: #E5005A;
     line-height: 3rem;
 }
 
-.ms-section{
+.web-section{
     width: 100%;
     
 }
-.ms-row{
+.web-row{
     width: 100%;
     height: auto;
     margin: auto;
@@ -24,13 +24,13 @@ span-title{
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-.ms-row-left{
+.web-row-left{
     width: 40%;
 }
-.ms-row-right{
+.web-row-right{
     width: 60%;
 }
-.ms-img{
+.web-img{
     width: 100%;
     height: auto;
 }
@@ -39,19 +39,19 @@ p{
     width: 80%;
     padding-top: 1rem;
 }
-.ms-1-row-2{
-    background-image: url(../Images/svgs/ellipse-2.svg);
+.web-1-row-2{
+    background-image: url(../Images/svgs/ellipse-red.svg);
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 2rem;
 }
-.ms-row-buttons{
+.web-row-buttons{
     width: 100%;
     display: flex;
     padding-top: 5rem;
 
 }
-.ms-grid-container{
+.web-grid-container{
     /* max-width: 40rem; */
     padding: 1rem;
     display: grid;
@@ -60,19 +60,19 @@ p{
     align-items: center;
     justify-items: center;
 }
-.ms-tile{
+.web-tile{
     display: flex;
     width: 20rem;
     height: 8rem;
     justify-content: center;
-    align-items: center;
+    align-iteweb: center;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     background-color: #F3F4F5;;
     border-radius: 16px;
 }
-.ms-image-wrapper {
+.web-image-wrapper {
     padding: 1rem;
     width: 16rem;
     height: 6rem;
@@ -81,14 +81,14 @@ p{
     justify-content: start;
     position: relative;
 }
-.ms-tile{
+.web-tile{
     background-position: center;
     width: 30rem;
     background-repeat: no-repeat;
     background-size: contain;
     height: 9rem;
 }
-.ms-tile-text{
+.web-tile-text{
     color: #4A4A4C;
     /* padding: 0.5rem; */
     position: relative;
@@ -96,13 +96,13 @@ p{
     text-align: left;
 }
 @media (max-width: 1180px) {
-    .ms-row{
+    .web-row{
         flex-direction: column;
     }
-    .ms-row-left, .ms-row-right{
+    .web-row-left, .web-row-right{
         width: 100%;
     }
-    .ms-grid-container{
+    .web-grid-container{
         grid-template-columns: 1fr;
     }
   }
