@@ -14,6 +14,22 @@
 </head>
 
 <body>
+    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
+        <div class="container-fluid">
+            <a href="index.html"><img id="headerLogo" class="header-logo transition navControll" src="Images/smartcase_logo.png"
+                alt="" srcset=""></a>
+            <div class="dropdown transition">
+                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
+                </a>
+                <div class="dropdown-content">
+                    <a href="marketingove_strategie.html" class="transition dropdown-item">Marketingové strategie</a>
+                    <a href="foto_video_sluzby.html" class="transition dropdown-item">Foto-Video Služby</a>
+                    <a href="grafika_a_branding.html" class="transition dropdown-item">Firemní grafika</a>
+                    <a href="tvorba_webu.html" class="transition dropdown-item">Tvorba webů</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <section>
             <div class="ao-row-1">
@@ -41,15 +57,15 @@
                 </div>
             </div>
             <div class="ao-row ao-row-3">
-                <div class="ao-1-row-left">
+                <div class="ms-1-row-left">
                     <h6 style="color: #226FB7;">NAŠE STRATEGIE</h6>
                     <span-title-bold>Unikátní <br>Marketingový</span-title-bold>
                     <br>
                     <span-title>plán</span-title>
                     <p>Audit aktuální situace, podle které zjistíme Váš stav a vytvoříme plán Vám přímo na míru</p>
                 </div>
-                <div class="ao-row-right">
-                    <img class="ao-img" style="max-width: 480px;" src="Images/AboutUs/secondImage.svg" alt="">
+                <div class="ms-row-right">
+                    <img class="ms-img" style="max-width: 500px;" src="Images/AboutUs/secondImage.svg" alt="">
                 </div>
             </div>
             <div class="ao-row-1">
@@ -60,9 +76,9 @@
             </div>
             </div>
 
-            <div class="carouselworkers-container" style="margin-bottom: 5rem;">
+            <div class="slide-container swiper" style="height: 100%;">
                 <div class="slide-content swiper-initialized swiper-horizontal swiper-pointer-events">
-                    <!-- <div class="card-wrapper swiper-wrapper" id="swiper-wrapper-59c6bd5939ab7248" aria-live="polite"
+                    <div class="card-wrapper swiper-wrapper" id="swiper-wrapper-59c6bd5939ab7248" aria-live="polite"
                         style="cursor: grab; transition-duration: 0ms; transform: translate3d(-835px, 0px, 0px);">
                         <div class="card swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
                             aria-label="3 / 5" style="width: 278.333px;">
@@ -70,7 +86,7 @@
                                 <span class="overlay"></span>
                                 <div class="card-image">
                                     <img src="Images/AboutUs/vaclav_kraut.png" class="img-fluid card-img"
-                                        alt="Václav KRAUT">
+                                        alt="vaclavkraut">
                                 </div>
                             </div>
                             <div class="card-content align">
@@ -133,13 +149,145 @@
                                 <p class="description">CFO &amp; CHRO</p>
                             </div>
                         </div>
-                        </a><br />
-                    </div> -->
+                        <div class="card swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5"
+                            style="width: 278.333px;">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="Images/AboutUs/vaclav_kraut.png" class="img-fluid card-img"
+                                        alt="vaclavkraut">
+                                </div>
+                            </div>
+                            <div class="card-content align">
+                                <h3 class="name">Václav KRAUT</h3>
+                                <p class="description">Sales Manager</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 5"
+                            style="width: 278.333px;">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="Images/AboutUs/petr_princ.png" class="img-fluid card-img" alt="petrprinc">
+                                </div>
+                            </div>
+                            <div class="card-content align">
+                                <h3 class="name">Petr PRINC</h3>
+                                <p class="description">Operation Manager</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="4"
+                            role="group" aria-label="5 / 5" style="width: 278.333px;">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="Images/AboutUs/radim_vopava.png" class="img-fluid card-img"
+                                        alt="radimvopava">
+                                </div>
+                            </div>
+                            <div class="card-content align">
+                                <h3 class="name">Radim VOPAVA</h3>
+                                <p class="description">Marketing &amp; Sales Manager</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                            data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 278.333px;">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="Images/AboutUs/jiri_simana.png" class="img-fluid card-img"
+                                        alt="jirisimana">
+                                </div>
+                            </div>
+                            <div class="card-content align">
+                                <h3 class="name">Jiří ŠIMANA</h3>
+                                <p class="description">CEO</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                            data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 278.333px;">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="Images/AboutUs/david_simana.png" class="img-fluid card-img"
+                                        alt="davidsimana">
+                                </div>
+                            </div>
+                            <div class="card-content align">
+                                <h3 class="name">David ŠIMANA</h3>
+                                <p class="description">CFO &amp; CHRO</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
+                            aria-label="3 / 5" style="width: 278.333px;">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="Images/AboutUs/petr_princ.png" class="img-fluid card-img"
+                                        alt="vaclavkraut">
+                                </div>
+                            </div>
+                            <div class="card-content align">
+                                <h3 class="name">Václav KRAUT</h3>
+                                <p class="description">Sales Manager</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
+            <div style="margin: 5rem;height: 5rem;">
+                            
             </div>
         </section>
+        <div class="wrappermargin reveal">
+            <div class="contact-container reveal active">
+                <h6 style="color: whitesmoke;">KONTAKT</h6>
+                <span class="title-bold-white">Kontaktujte</span> <br>
+                <span class="title-white">nás</span>
+    
+                <div class="contactinner-container">
+                    <p style="color: whitesmoke;">Máte dotaz? Pojďme se sejít a společně vše proberme!</p>
+                    <a href="contact_us_subpage.html"><button type="button" class="btn btn-outline-light">Sjednat schůzku <i
+                                class="bi bi-arrow-right-short"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <footer class="foot">
+            <div class="footer-wrapper">
+                <div class="footer-part-1">
+                    <a href=""><img class="transition" src="Images/smartcase_logo.png" alt=""></a>
+                </div>
+                <div class="footer-part-2">
+                    <a href="">
+                        <h5 class="transition">KONTAKT</h5>
+                    </a>
+                </div>
+                <div class="footer-part-3">
+                    <a href="">
+                        <h5 class="transition">PODMÍNKY</h5>
+                    </a>
+                </div>
+                <div class="footer-part-4">
+                    <a href="">
+                        <h5 class="transition">POMOC</h5>
+                    </a>
+                </div>
+                <div class="footer-part-5">
+                    <a href="">
+                        <h5 class="transition">ÚČET</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="padding: 1rem; gap: 1rem;">
+                <a href="https://www.facebook.com/SmartcaseAgency" class="transition"><img src="Images/svgs/facebook.svg"
+                        alt=""></a>
+                <a href="https://www.instagram.com/smartcase_agency/" class="transition"><img
+                        src="Images/svgs/instagram.svg" alt=""></a>
+            </div>
+            <div class="row" style="padding: 1rem;">
+                Copyright Smart Case s.r.o.
+            </div>
+        </footer>
     </main>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
