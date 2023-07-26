@@ -122,7 +122,27 @@ p{
     .ao-row-left, .ao-row-right{
         width: 100%;
     }
+
     .ao-grid-container{
         grid-template-columns: 1fr;
     }
   }
+
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none !important;
+    border-radius: 0.25rem;
+    text-align: center;
+    /* margin: 0.5rem; */
+}
+.card-img, .card-img-bottom {
+    margin: 0.5rem;
+}
