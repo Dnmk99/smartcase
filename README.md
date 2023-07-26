@@ -1,2 +1,3 @@
 # smartcase
-# Smart Case Agency website ![image](https://github.com/Dnmk99/smartcaseagency/assets/98945704/d6fa71a2-6b7b-4cc2-b83c-db18f346e6fa)
+# ![image](https://github.com/Dnmk99/smartcase/assets/98945704/2a30ec6d-66df-468f-852e-811eb528defe)
+
