@@ -75,15 +75,15 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    align-iteao: center;
-    justify-iteao: center;
+    align-items: center;
+    justify-items: center;
 }
 .ao-tile{
     display: flex;
     width: 20rem;
     height: 8rem;
     justify-content: center;
-    align-iteao: center;
+    align-items: center;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
