@@ -15,7 +15,8 @@
 @media (max-width: 1155px) {
     .two-columns {
         flex-basis: 100%;
-    }#section-4-col-left {
+    }
+    #section-4-col-left {
         order: 2;
     }
     /* Set the order of right column to 1 on smaller screens */

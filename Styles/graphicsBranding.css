@@ -9,10 +9,10 @@ span-title{
     color: #F2BA44;
     line-height: 3rem;
 }
-
 .gb-section{
     width: 100%;
-    
+    top: -10rem;
+    position: relative;
 }
 .gb-row{
     width: 100%;
@@ -39,8 +39,19 @@ p{
     width: 80%;
     padding-top: 1rem;
 }
-.gb-1-row-2{
+
+.gb-1-bg {
+    width: 100%;
+    height: 10rem;
+    margin: 0;
+    position: relative;
+    top: 35rem;
+    padding: 0;
     background-image: url(../Images/svgs/ellipse-yellow.svg);
+    background-position: top;
+    background-size: cover;
+}
+.gb-1-row-2{
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 2rem;
@@ -62,10 +73,10 @@ p{
 }
 .gb-tile{
     display: flex;
-    width: 20rem;
+    width: 100%;
     height: 8rem;
     justify-content: center;
-    align-itegb: center;
+    align-items: center;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -92,17 +103,34 @@ p{
     color: #4A4A4C;
     /* padding: 0.5rem; */
     position: relative;
-    top: 50px;
+    top: 45px;
     text-align: left;
 }
+@media (min-width: 1180px) {
+    .gb-tile{ height: 10rem;}
+}
+
 @media (max-width: 1180px) {
+    span{
+        font-size: 16px !important;
+    }
+    .gb-tile{ height: 14rem; width: auto; }
     .gb-row{
         flex-direction: column;
     }
     .gb-row-left, .gb-row-right{
         width: 100%;
     }
+    .gb-row-left-1, .gb-row-left-2{order: 2;}
+    .gb-row-right-1, .gb-row-left-2{order: 1;}
     .gb-grid-container{
         grid-template-columns: 1fr;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    p {
+        font-size: 16px;
+        width: 80%;
+        /* padding-top: 1rem; */
     }
   }

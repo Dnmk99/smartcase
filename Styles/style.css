@@ -7,7 +7,17 @@
 html {
   scroll-behavior: smooth;
 }
-
+span-title-bold{
+  font-size: 350%;
+  font-weight: bold;
+  color: #226FB7;
+  line-height: 3rem;
+}
+span-title{
+  font-size: 350%;
+  color: #226FB7;
+  line-height: 3rem;
+}
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif !important;
@@ -27,10 +37,13 @@ body {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
-
-main {
+section{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+main {
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
   padding-top: 8rem;
   height: 100%;
 }
@@ -43,8 +56,47 @@ main {
   background-color: #DFEBF4 !important;
 }
 
+.contact-form{
+  width: 100%;
+  height: 100%;
+  background-color: #226FB7;
+  border-radius: 16px;
+  padding: 1rem;
+}
+.formInput{
+  width: 100%;
+    background-color: #226FB7 !important;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.formInput:focus-visible {
+  border: 1px white whitesmoke !important;
+  border-radius: 3px;
+  outline: none;
+}
+.formMessage{
+  width: 100%;
+  background-color: #226FB7 !important;
+  border: 0;
+  border: 2px solid white;
+  color: white;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
 a {
   text-decoration: none !important;
   color: black !important;
@@ -245,6 +297,7 @@ footer{
     font-size: 14px;
   }
   .grid-container{
+    gap: 1rem;
     grid-template-columns: 1fr;
   }
   .footer-wrapper{
