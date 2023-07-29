@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #F2BA44;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d1a13b;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 span-title-bold{
     font-size: 350%;
     font-weight: bold;
@@ -45,7 +65,7 @@ p{
     height: 10rem;
     margin: 0;
     position: relative;
-    top: 35rem;
+    top: 34rem;
     padding: 0;
     background-image: url(../Images/svgs/ellipse-yellow.svg);
     background-position: top;
