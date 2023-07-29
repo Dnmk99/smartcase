@@ -18,8 +18,8 @@
 <body>
     <header class="navbar customNavbar navbar-light bg-light" aria-label="">
         <div class="container-fluid">
-            <img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset="">
+            <a href="index.html"><img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
+                alt="" srcset=""></a>
             <div class="dropdown transition">
                 <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
                 </a>
@@ -50,29 +50,72 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <h6>SmartCase Agency, s.r.o.</h6>
-                <p>Prešovská 194/15301 00 Plzeň  Česká republika</p>
-                
+                <p>Prešovská 194/15301 00 Plzeň Česká republika</p>
+
             </div>
             <div class="column-right">
-                <div class="contact-form" >
-                    <h6>KONTAKT</h6>
-                    <span-title-bold style="color: white;">Kontaktujte</span-title-bold><br><span-title style="color: white;"> nás</span-title><br>
-                    <span style="color: white;">Máte dotaz? Pojďme se sejít a společně vše proberme!</span>
+                <div class="contact-form">
+                    <h6 style="color: white;">KONTAKT</h6><br>
 
-                    <input name="name" placeholder="Jméno" class="formInput" type="text"><br><br>
-                    <input name="email" placeholder="Email" class="formInput" type="email"><br><br>
-                    <input name="tel" placeholder="Telefon" class="formInput" type="tel"><br><br>
-                    <textarea name="message" placeholder="Zpráva..." id="" class="formMessage" cols="30" rows="10"></textarea>
-                    <div style="justify-content: space-around; align-items: center;" class="row">
-                        <button type="button" class="btn btn-light">Sjednat schůzku</button>
-                        <h5 style="color: white;">SLEDUJTE NÁS</h5>
-                        <div>
-                            <a href="https://www.facebook.com/SmartcaseAgency"><img src="Images/svgs/facebook-white.svg" alt=""></a>
-                            <a href="https://www.instagram.com/smartcase_agency/"><img src="Images/svgs/instagram-white.svg" alt=""></a>
+                    <span-title-bold style="color: white;">Kontaktujte</span-title-bold><br><span-title
+                        style="color: white;"> nás</span-title><br>
+                    <span style="color: white;">Máte dotaz? Pojďme se sejít a společně vše proberme!</span><br>
+                    <form action="kontakt.php" method="post">
+                        <input name="name" placeholder="Jméno" class="formInput" type="text"><br><br>
+                        <input name="email" placeholder="Email" class="formInput" type="email"><br><br>
+                        <input name="tel" placeholder="Telefon" class="formInput" type="tel"><br><br>
+                        <textarea name="message" placeholder="Zpráva..." id="" class="formMessage" cols="30"
+                            rows="10"></textarea>
+                        <input type="submit" name="submit" class="btn btn-light transition" value="Sjednat schůzku"><br>
+                        <div style="justify-content: space-between; align-items: center;" class="row">
+                            <h5 style="color: white;">SLEDUJTE NÁS</h5>
+                            <div>
+                                <a href="https://www.facebook.com/SmartcaseAgency"><img class="transition"
+                                        src="Images/svgs/facebook-white.svg" alt=""></a>
+                                <a href="https://www.instagram.com/smartcase_agency/"><img class="transition"
+                                        src="Images/svgs/instagram-white.svg" alt=""></a>
+                            </div>
                         </div>
-                    </div>
+                        <?php
+                        // include 'db.php';
+                        if (isset($_POST['submit'])) {
+                            $headers = "From: Contact form" . "\r\n";
+                            $mailTo = 'ti18.mika@gmail.com';
+                            $name = $_POST['name'];
+                            $email = $_POST['email'];
+                            $tel = $_POST['tel'];
+                            $emailAndTel = 'From: ' . $email . "\n Tel: " . $tel;
+                            $message = $_POST['message'];
+
+
+                            if ($name && $email && $tel && $message) {
+                                //ok
+                                // echo '<h5 style="color: white;">Odpovíme vám co nejdříve to bude možné.<h5>';
+                                // mail($headers,$mailTo,$name, $emailAndTel ,$message);
+                                exit; // Make sure to exit after the redirect to prevent further code execution
+                            } else if (!$name) {
+                                echo '<br><h5 style="color: white;">Abych věděli kdo nás kontaktuje</h6><br>
+                                <h6 style="color: white; position: relative; top: -2rem;"> <i style="color: white;" class="bi bi-exclamation-circle"></i> Zadejte prosím jméno a příjmení.<h6>';
+                                
+                            } else if (!$email) {
+                                echo '<br><h5 style="color: white;">Abych věděli kdo nás kontaktuje</h6><br>
+                                <h6 style="color: white; position: relative; top: -2rem;"><i style="color: white;" class="bi bi-exclamation-circle"></i> Zadejte prosím e-mailovou adresu.<h6>';
+                                
+                            } else if (!$tel) {
+                                echo '<br><h5 style="color: white;">Abych věděli kdo nás kontaktuje</h6><br>
+                                <h6 style="color: white; position: relative; top: -2rem;"><i style="color: white;" class="bi bi-exclamation-circle"></i> Zadejte prosím své telefonní číslo.<h6>';
+                                
+                            } else if (!$message) {
+                                echo '<br><h6 style="color: white;"><i style="color: white;" class="bi bi-exclamation-circle"></i> Zpráva neobsahuje žádné znaky.<h6>';
+                             
+                            }
+                           
+                        }
+                        ?>
+                    </form>
                 </div>
-                
+
+
             </div>
         </div>
     </main>

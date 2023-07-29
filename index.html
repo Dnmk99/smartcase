@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -17,8 +18,8 @@
 <body>
     <header class="navbar customNavbar navbar-light bg-light" aria-label="">
         <div class="container-fluid">
-            <img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset="">
+            <a href="#"><img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
+                alt="" srcset=""></a>
             <div class="dropdown transition">
                 <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
                 </a>
@@ -152,46 +153,54 @@
                 <span>Zakládáme si na kvalitě a dostupnosti. <br> U nás si každý najde své dle jeho potřeby.</span>
             </div>
             <div class="grid-container reveal transition">
-                <div class="tile tile-transition hoverBlue">
-                    <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_target.png" alt=""></div>
-                    <div class="text-wrapper">
-                        <div style="display: flex; flex-direction: column;">
-                            <span class="tile-text-blue-bald">Marketingová</span>
-                            <span class="tile-text-blue"> strategie</span>
-                            <span>Zjistíme, na co se zaměřit a jak postupovat</span>
+                <a href="marketingove_strategie.html">
+                    <div class="tile tile-transition hoverBlue">
+                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_target.png" alt=""></div>
+                        <div class="text-wrapper">
+                            <div style="display: flex; flex-direction: column;">
+                                <span class="tile-text-blue-bald">Marketingová</span>
+                                <span class="tile-text-blue"> strategie</span>
+                                <span>Zjistíme, na co se zaměřit a jak postupovat</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tile tile-transition hoverYellow">
-                    <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_business_graphics.png" alt=""></div>
-                    <div class="text-wrapper">
-                        <div style="display: flex; flex-direction: column;">
-                            <span class="tile-text-yellow-bald">Firemní grafika</span>
-                            <span class="tile-text-yellow">Branding a Identita</span>
-                            <span>Vytvořme Vašemu podnikání pravou tvář</span>
+                </a>
+                <a href="grafika_a_branding.html">
+                    <div class="tile tile-transition hoverYellow">
+                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_business_graphics.png" alt=""></div>
+                        <div class="text-wrapper">
+                            <div style="display: flex; flex-direction: column;">
+                                <span class="tile-text-yellow-bald">Firemní grafika</span>
+                                <span class="tile-text-yellow">Branding a Identita</span>
+                                <span>Vytvořme Vašemu podnikání pravou tvář</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tile tile-transition hoverGreen">
-                    <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_photoandvideo.png" alt=""></div>
-                    <div class="text-wrapper">
-                        <div style="display: flex; flex-direction: column;">
-                            <span class="tile-text-green-bald">Profesionální </span>
-                            <span class="tile-text-green">Foto-Video Služby</span>
-                            <span>Podívejme se na Vás z jiného pohledu</span>
+                </a>
+                <a href="foto_video_sluzby.html">
+                    <div class="tile tile-transition hoverGreen">
+                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_photoandvideo.png" alt=""></div>
+                        <div class="text-wrapper">
+                            <div style="display: flex; flex-direction: column;">
+                                <span class="tile-text-green-bald">Profesionální </span>
+                                <span class="tile-text-green">Foto-Video Služby</span>
+                                <span>Podívejme se na Vás z jiného pohledu</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tile tile-transition hoverRed">
-                    <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_websitesinternet.png" alt=""></div>
-                    <div class="text-wrapper">
-                        <div style="display: flex; flex-direction: column;">
-                            <span class="tile-text-red-bald">Webové stránky </span>
-                            <span class="tile-text-red">Prodejní systémy</span>
-                            <span>Zapojme klienty a začněme prodávat</span>
+                </a>
+                <a href="tvorba_webu.html">
+                    <div class="tile tile-transition hoverRed">
+                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_websitesinternet.png" alt=""></div>
+                        <div class="text-wrapper">
+                            <div style="display: flex; flex-direction: column;">
+                                <span class="tile-text-red-bald">Webové stránky </span>
+                                <span class="tile-text-red">Prodejní systémy</span>
+                                <span>Zapojme klienty a začněme prodávat</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="section-5-row-2 reveal">
                 <h6>NAŠE PRÁCE</h6>
@@ -253,7 +262,7 @@
 
             <div class="contactinner-container">
                 <p style="color: whitesmoke;">Máte dotaz? Pojďme se sejít a společně vše proberme!</p>
-                <a href="kontakt.html"><button type="button" class="btn btn-outline-light">Sjednat schůzku <i
+                <a href="kontakt.php"><button type="button" class="btn btn-outline-light">Sjednat schůzku <i
                     class="bi bi-arrow-right-short"></i></button></a>
             </div>
         </div>
@@ -264,7 +273,7 @@
                 <a href=""><img class="transition" src="Images/smartcase_logo.png" alt=""></a>
             </div>
             <div class="footer-part-2">
-                <a href="kontakt.html"><h5 class="transition">KONTAKT</h5></a>
+                <a href="kontakt.php"><h5 class="transition">KONTAKT</h5></a>
             </div>
             <div class="footer-part-3">
                 <a href=""><h5 class="transition">PODMÍNKY</h5></a>

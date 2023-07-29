@@ -1,3 +1,25 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #E5005A;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c90051;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+
 span-title-bold{
     font-size: 350%;
     font-weight: bold;
@@ -45,7 +67,7 @@ p{
     height: 10rem;
     margin: 0;
     position: relative;
-    top: 35rem;
+    top: 35.5rem;
     padding: 0;
     background-image: url(../Images/svgs/ellipse-red.svg);
     background-position: top;
