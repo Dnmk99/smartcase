@@ -1,6 +1,6 @@
+<?php include 'functions.php';?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,27 +11,43 @@
         rel="stylesheet">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
+    <?php /*include 'includes/navbar.php'*/?>
+    <nav id="navbar" class="navbar customNavbar navbar-light bg-white " aria-label="Fifth navbar example">
         <div class="container-fluid">
-            <a href="#"><img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset=""></a>
-            <div class="dropdown transition">
-                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
+            <div style="display: flex; max-width: 30%;padding-top: 0.5rem; display: flex; 
+                padding-top: 0.5rem; align-content: center; flex-wrap: wrap;">
+                <a class="navbar-brand" href="index.php">
+                    <image src="Images/smartcase_logo.png" style="width: 100%;" />
                 </a>
-                <div class="dropdown-content">
-                    <a href="marketingove_strategie.php" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="foto_video_sluzby.php" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.php" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="tvorba_webu.php" class="transition dropdown-item">Tvorba webů</a>
+            </div>
+            <div style="display: flex; max-width: 60%;padding-top: 0.5rem; display: flex; 
+                padding-top: 0.5rem; align-content: center; flex-wrap: wrap;">
+                <button href="kontakt.php" type="button" class="btn btn-primary">Kontakt</button>
+                <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="images/grey_button_menu.png" class="transition navbar-toggler-image" alt="">
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse" id="navbar" style="list-style-type: none; margin: 0;padding: 1rem;">
+                <div id="navbar" class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-end" style="padding-left: 80%">
+                    <div class="row row-cols-4 text-center">
+                        <a class="col" href=""><img style="width:1.5rem" src="Images/Icons/subpage_small_target.png" alt=""></a>
+                        <a class="col" href=""><img style="width:2rem" src="" alt=""></a>
+                        <a class="col" href=""><img style="width:2rem" src="" alt=""></a>
+                        <a class="col" href=""><img style="width:2rem" src="" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
     <main>
         <section id="section-1" class="row section section-1">
             <div id="section-1-col-left" class="two-columns column-left">
@@ -43,40 +59,44 @@
                     <br><br>
                     <span>Pomůžeme Vám rozjet Vaše podnikání!</span>
                     <div class="grid-container">
-                        <a href="marketingove_strategie.php">
+                        <a class="a-tile" href="marketingove_strategie.php">
                             <div class="tile tile-transition hoverBlue">
-                                <div class="image-wrapper"><img class="tile-img" src="Images/Icons/subpage_small_target.png"
-                                        alt=""></div>
-                                <div class="text-wrapper"><span class="tile-text">Marketingové <br> strategie</span></div>
+                                <div class="image-wrapper"><img class="tile-img"
+                                        src="Images/Icons/subpage_small_target.png" alt=""></div>
+                                <div class="text-wrapper"><span class="tile-text">Marketingové <br> strategie</span>
+                                </div>
                             </div>
                         </a>
-                        
-                        <a href="grafika_a_branding.php">
+
+                        <a class="a-tile" href="grafika_a_branding.php">
                             <div class="tile tile-transition hoverYellow">
-                                <div class="image-wrapper"><img class="tile-img" src="Images/Icons/subpage_small_picture.png"
-                                        alt=""></div>
-                                <div class="text-wrapper"><span class="tile-text">Firemní grafika <br> Branding</span></div>
+                                <div class="image-wrapper"><img class="tile-img"
+                                        src="Images/Icons/subpage_small_picture.png" alt=""></div>
+                                <div class="text-wrapper"><span class="tile-text">Firemní grafika <br> Branding</span>
+                                </div>
                             </div>
                         </a>
-                        
-                        <a href="foto_video_sluzby.php">
+
+                        <a class="a-tile" href="foto_video_sluzby.php">
                             <div class="tile tile-transition hoverGreen">
-                                <div class="image-wrapper"><img class="tile-img" src="Images/Icons/subpage_small_camera.png"
-                                        alt=""></div>
+                                <div class="image-wrapper"><img class="tile-img"
+                                        src="Images/Icons/subpage_small_camera.png" alt=""></div>
                                 <div class="text-wrapper"><span class="tile-text">Profesionální <br> Foto-Video
                                         služby</span></div>
                             </div>
                         </a>
-                        
-                        <a href="tvorba_webu.php">
+
+                        <a class="a-tile" href="tvorba_webu.php">
                             <div class="tile tile-transition hoverRed">
-                                <div class="image-wrapper"><img class="tile-img" src="Images/Icons/subpage_small_web.png" alt="">
+                                <div class="image-wrapper"><img class="tile-img"
+                                        src="Images/Icons/subpage_small_web.png" alt="">
                                 </div>
-                                <div class="text-wrapper"><span class="tile-text">Tvorba webů <br> Prodejní systémy</span>
+                                <div class="text-wrapper"><span class="tile-text">Tvorba webů <br> Prodejní
+                                        systémy</span>
                                 </div>
                             </div>
                         </a>
-                        
+
                     </div><br><br>
                     <div class="row" style="max-height: 3rem;">
                         <button type="button" style="height: 2.5rem;" class="btn btn-primary">Více informací <i
@@ -115,20 +135,21 @@
         </section>
         <div class="section-3-bg"></div>
         <section id="section-3" class="row section section-3">
-            
+
             <div class="section-3-row-1 reveal">
                 <h6>SPOLUPRACUJEME</h6>
                 <h4>Dlouhodobě s klienty ze všech odvětví</h4>
                 <span style="width: 80%; text-align: center;">Každý klient je unikátní a s ním i celý marketingový
                     postup.
                     Žádný klient není překážka - Na vše jsme připravení.</span>
-            </div>
-            <div class="section-3-row-2 reveal">
-                <img class="customer-img" src="Images/Customers/fin2u_logo.png" alt="">
-                <img class="customer-img" src="Images/Customers/FX_logo.png" alt="">
-                <img class="customer-img" src="Images/Customers/ludmila_prokupkova_logo.png" alt="">
-                <img class="customer-img" src="Images/Customers/ORT_logo.png" alt="">
-            </div>
+            </div><br>
+
+            
+            <swiper-container class="swiper-pag" pagination="true" pagination-dynamic-bullets="true">
+            <?php 
+                getAllCustomerData();
+                ?>
+            </swiper-container>
         </section>
         <section id="section-4" class="section section-4">
             <div id="section-4-col-left" class="two-columns column-left reveal">
@@ -137,9 +158,11 @@
                     <span class="title title-bold">Unikátní <br> Marketingový</span><br>
                     <span class="title">plán</span>
                     <br><br>
-                    <span>Audit aktuální situace, podle které zjistíme Váš stav <br> a vytvoříme plán Vám přímo na míru</span>
+                    <span>Audit aktuální situace, podle které zjistíme Váš stav <br> a vytvoříme plán Vám přímo na
+                        míru</span>
                     <div class="row" style="margin-top: 1rem !important;">
-                        <button type="button" class="btn btn-primary">Více informací <i class="bi bi-arrow-right-short"></i></button>
+                        <button type="button" style="max-width: 12rem;" class="btn btn-primary">Více informací <i
+                                class="bi bi-arrow-right-short"></i></button>
                     </div>
                 </div>
             </div>
@@ -155,7 +178,8 @@
             <div class="grid-container reveal transition">
                 <a href="marketingove_strategie.php">
                     <div class="tile tile-transition hoverBlue">
-                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_target.png" alt=""></div>
+                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_target.png"
+                                alt=""></div>
                         <div class="text-wrapper">
                             <div style="display: flex; flex-direction: column;">
                                 <span class="tile-text-blue-bald">Marketingová</span>
@@ -167,7 +191,8 @@
                 </a>
                 <a href="grafika_a_branding.php">
                     <div class="tile tile-transition hoverYellow">
-                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_business_graphics.png" alt=""></div>
+                        <div class="image-wrapper-large"><img class="tile-img-large"
+                                src="Images/Icons/big_business_graphics.png" alt=""></div>
                         <div class="text-wrapper">
                             <div style="display: flex; flex-direction: column;">
                                 <span class="tile-text-yellow-bald">Firemní grafika</span>
@@ -179,7 +204,8 @@
                 </a>
                 <a href="foto_video_sluzby.php">
                     <div class="tile tile-transition hoverGreen">
-                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_photoandvideo.png" alt=""></div>
+                        <div class="image-wrapper-large"><img class="tile-img-large"
+                                src="Images/Icons/big_photoandvideo.png" alt=""></div>
                         <div class="text-wrapper">
                             <div style="display: flex; flex-direction: column;">
                                 <span class="tile-text-green-bald">Profesionální </span>
@@ -191,7 +217,8 @@
                 </a>
                 <a href="tvorba_webu.php">
                     <div class="tile tile-transition hoverRed">
-                        <div class="image-wrapper-large"><img class="tile-img-large" src="Images/Icons/big_websitesinternet.png" alt=""></div>
+                        <div class="image-wrapper-large"><img class="tile-img-large"
+                                src="Images/Icons/big_websitesinternet.png" alt=""></div>
                         <div class="text-wrapper">
                             <div style="display: flex; flex-direction: column;">
                                 <span class="tile-text-red-bald">Webové stránky </span>
@@ -205,11 +232,15 @@
             <div class="section-5-row-2 reveal">
                 <h6>NAŠE PRÁCE</h6>
                 <h4>Jak vypadá naše práce v praxi?</h4>
-                <span>Použití a reálné výsledky v praxi jsou bezpochypně ta nejduležitější část. <br> Podívejte se sami, jak naše práce v praxi vypadá.</span>
+                <span>Použití a reálné výsledky v praxi jsou bezpochypně ta nejduležitější část. <br> Podívejte se sami,
+                    jak naše práce v praxi vypadá.</span>
             </div>
-            <div class="row section-5-row-3 reveal">
-                <div class="column-left-90p"><img src="Images/svgs/background.svg" width="100%" /></div>
-                <div class="column-right-10p"><img class="svg" src="Images/svgs/vertical-dots.svg" /></div>
+            <div style="max-height: 20rem; width: 100%;">
+            <swiper-container class="verticalSwiper" direction="vertical" pagination="true" pagination-clickable="true">
+                <?php 
+                    getAllOurWork(); 
+                ?>
+            </swiper-container>
             </div>
         </section>
         <section id="section-6" class="section-6">
@@ -221,38 +252,71 @@
             </div>
             <div class="section-6-row-2">
                 <div class="grid-container-3fr">
-                    <div class="tile-wrapper transition-blue reveal">
-                        <div class="tile-references">
-                            <img src="Images/svgs/five-stars.svg" alt="">
-                            <p>Jako externí marketingová asistentka firmy Ort s.r.o. hodnotím naši spolupráci s firmou SmartCase velmi pozitivně. Spolupracujeme na několika projektech a jejich kreativita a inovativní nápady jsou něco, co nás vždy nadchne. Komunikace s týmem SmartCase je velmi efektivní a rychlá, jejich mladý a talentovaný tým vždy hledá nejlepší řešení pro naše potřeby. Jsem spokojena s výsledky dosavadní spolupráce a věřím, že společně budeme pokračovat na zajímavých projektech.</p>
-                        </div>
-                        <div class="customer-name">
-                            <h4>Marketing Assistent Ort s.r.o.</h4>
-                            <p class="tile-text-blue">Client</p>
-                        </div>
-                    </div>
-                    <div class="tile-wrapper transition-blue reveal">
-                        <div class="tile-references">
-                            <img src="Images/svgs/five-stars.svg" alt="">
-                            <p>Komplexní marketingová služba s ambiciózním vedením, které se pořád vzdělává a posouvá v před. Klient je pro ně na 1. místě. Připraví pro vás marketingový plán, brandmanuál - strategii, prakticky vše potřebné pro úspěšný marketing. Rozhodně doporučuji.</p>
-                        </div>
-                        <div class="customer-name">
-                            <h4>Jan Škvarek </h4>
-                            <p class="tile-text-blue">Client</p>
-                        </div>
-                    </div>
-                    <div class="tile-wrapper transition-blue reveal">
-                        <div class="tile-references">
-                            <img src="Images/svgs/five-stars.svg" alt="">
-                            <p>Spolupráce s SMART Case „Když mě a naši hospůdku oslovil pan Šimana jménem marketingové firmy SMART case s nabídkou pomoci spravovat naše sociální sítě, přišlo to jako na zavolanou. Se spravováním sociálních sítí jsme potřebovali opravdu pomoc a myslím, že výsledek stojí za to. Spolupráce s panem Šimanou trvá téměř půl roku a funguje na jedničku. Zvýšili jsme o hospůdce povědomí, máme více hostů, což bylo jedním z cílů této spolupráce. Děkuji moc a těším se na další pokračování naší společné cesty".</p>
-                        </div>
-                        <div class="customer-name">
-                            <h4>Club Vřesiná, Jana Puldová </h4>
-                            <p class="tile-text-blue">Client</p>
-                        </div>
-                    </div>
+                    <?php getAllClientRatings() ?>
                 </div>
             </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <?php include 'includes/footer.php'?>
+
+    <!-- <div class="wrappermargin reveal">
+        <div class="contact-container reveal active">
+            <h6 style="color: whitesmoke;">KONTAKT</h6>
+            <span class="title-bold-white">Kontaktujte</span> <br>
+            <span class="title-white">nás</span>
+
+            <div class="contactinner-container">
+                <p style="color: whitesmoke;">Máte dotaz? Pojďme se sejít a společně vše proberme!</p>
+                <a href="contact_us_subpage.html"><button type="button" class="btn btn-outline-light">Sjednat schůzku <i
+                            class="bi bi-arrow-right-short"></i></button></a>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="footer-wrapper">
+            <div class="footer-part-1">
+                <a href=""><img class="transition" src="Images/smartcase_logo.png" alt=""></a>
+            </div>
+            <div class="footer-part-2">
+                <a href="">
+                    <h5 class="transition">KONTAKT</h5>
+                </a>
+            </div>
+            <div class="footer-part-3">
+                <a href="">
+                    <h5 class="transition">PODMÍNKY</h5>
+                </a>
+            </div>
+            <div class="footer-part-4">
+                <a href="">
+                    <h5 class="transition">POMOC</h5>
+                </a>
+            </div>
+            <div class="footer-part-5">
+                <a href="">
+                    <h5 class="transition">ÚČET</h5>
+                </a>
+            </div>
+        </div>
+        <div class="row" style="padding: 1rem; gap: 1rem;">
+            <a href="https://www.facebook.com/SmartcaseAgency" class="transition"><img src="Images/svgs/facebook.svg"
+                    alt=""></a>
+            <a href="https://www.instagram.com/smartcase_agency/" class="transition"><img
+                    src="Images/svgs/instagram.svg" alt=""></a>
+        </div>
+        <div class="row" style="padding: 1rem;">
+            Copyright Smart Case s.r.o.
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+<script src="Scripts/index.js"></script> -->
+
 </html>

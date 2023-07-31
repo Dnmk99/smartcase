@@ -18,16 +18,16 @@
 <body>
     <header class="navbar customNavbar navbar-light bg-light" aria-label="">
         <div class="container-fluid">
-            <a href="index.html"><img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
+            <a href="index.php"><img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
                 alt="" srcset=""></a>
             <div class="dropdown transition">
                 <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
                 </a>
                 <div class="dropdown-content">
-                    <a href="marketingove_strategie.html" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="foto_video_sluzby.html" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.html" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="tvorba_webu.html" class="transition dropdown-item">Tvorba webů</a>
+                    <a href="marketingove_strategie.php" class="transition dropdown-item">Marketingové strategie</a>
+                    <a href="foto_video_sluzby.php" class="transition dropdown-item">Foto-Video Služby</a>
+                    <a href="grafika_a_branding.php" class="transition dropdown-item">Firemní grafika</a>
+                    <a href="tvorba_webu.php" class="transition dropdown-item">Tvorba webů</a>
                 </div>
             </div>
         </div>

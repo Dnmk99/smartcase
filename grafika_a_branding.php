@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
+    <!-- <header class="navbar customNavbar navbar-light bg-light" aria-label="">
         <div class="container-fluid">
             <a href="index.php"><img id="headerLogo" class="header-logo transition navControll" src="Images/smartcase_logo.png"
                 alt="" srcset=""></a>
@@ -28,7 +28,8 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+    <?php include 'navbar' ?>
     <main>
         <div class="gb-1-bg"></div>
         <section id="strategy-section-1" class="gb-section">
