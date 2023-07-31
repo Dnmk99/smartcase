@@ -10,12 +10,10 @@ function getAllCustomerData()
     $slides = array_chunk(mysqli_fetch_all($result, MYSQLI_ASSOC), 3);
 
     foreach ($slides as $slide) {
-        echo '<swiper-slide class="swiper-slide-pag">';
         foreach ($slide as $row) {
             $url = $row['url'];
-            echo '<img class="swiper-slide-pag-img" src="' . $url . '" alt="Slide Image">';
-        }
-        echo '</swiper-slide>';
+            echo '<div class="swiper-slide"> <img src="' . $url . '" style="width: 50%;" alt="Slide Image"> </div>';
+        }   //<div class="swiper-slide"> <img src="Images/Customers/FX_logo.png"></div>
     }
 }
 function getAllImageCategories()

@@ -1,52 +1,30 @@
-.swiper-pag {
-    width: 100%;
-    height: 100%;
+.swiper-container {
+    width: 100%; /* Set the container width */
+    overflow: hidden; /* Hide the overflowing elements */
   }
-
-  .swiper-slide-pag {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    padding-bottom: 1rem !important;
+  
+  .swiper-wrapper {
+    display: flex; /* Use flexbox to create a row layout */
   }
-
-  .swiper-slide-pag-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-width: 5rem;;
+  
+  .swiper-slide {
+    flex: 0 0 40%; /* Set each slide to take up 100% width of the container (one column at a time) */
   }
-
 
   .swiper {
     width: 100%;
     height: 100%;
   }
-  .verticalSwiper{
-    height: 20rem;
+/*   
+  .swiper-container-v {
+    width: 100%; 
+    overflow: hidden; 
   }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+  .swiper-wrapper-v {
+    display: flex; 
   }
-.swiper-slide-img-vertical{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-  /* .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */
+  
+  .swiper-slide-v {
+    flex: 0 0 40%; 
+} */
