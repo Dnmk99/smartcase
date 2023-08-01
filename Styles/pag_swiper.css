@@ -1,0 +1,20 @@
+.swiper-container {
+    width: 100%; /* Set the container width */
+    overflow: hidden; /* Hide the overflowing elements */
+  }
+  
+  .swiper-wrapper {
+    display: flex; /* Use flexbox to create a row layout */
+  }
+  
+  .swiper-slide {
+    flex: 0 0 40%; /* Set each slide to take up 100% width of the container (one column at a time) */
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+
+

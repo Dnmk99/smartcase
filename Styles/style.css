@@ -5,7 +5,10 @@
 @import url('section-5.css');
 @import url('section-6.css');
 @import url('main.css');
+@import url('pag_swiper.css');
 span-title-bold{
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
   font-size: 350%;
   font-weight: bold;
   color: #226FB7;
@@ -16,10 +19,72 @@ span-title{
   color: #226FB7;
   line-height: 3rem;
 }
+.h_blue{
+  color: #226fb7 !important;
+}
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif !important;
 }
+.navbar-toggler-image {
+  max-width: 2rem; /* This ensures the image won't exceed the container width */
+  height: auto; /* This maintains the aspect ratio of the image */
+}
+.btn{
+  max-width: 12rem !important;
+}
+.navbar-bg{
+  background: linear-gradient(#e1e5ec, #dae3f0) !important;
+transition: background-color 1s ease; 
+}
+/*header*/
+.customNavbar {
+  position: fixed !important;
+    top: -1px;
+  position: fixed !important;
+  z-index: 9999 !important;
+  width: 100% !important;
+  transition: background-color 1s ease; 
+}
+
+.navControll {
+  max-height: 35px;
+  padding: 0.15rem;
+}
+
+
+.navbar{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.navbar-toggler{
+  border: none !important;
+}
+.navbar-toggler:focus-visible{
+  border: none !important;
+}
+.navbar-toggler:focus{
+  border: none !important;
+}
+
+:root {
+  --navbar-bg-initial: rgba(246, 249, 251, 1);
+  --navbar-bg-target: rgba(192, 200, 210, 1);
+}
+
+/* Apply the initial background color */
+.customNavbar {
+  background-color: var(--navbar-bg-initial);
+  transition: background-color 1s ease;
+}
+
+/* Add a class to apply the target background color */
+.customNavbar.navbar-bg {
+  background-color: var(--navbar-bg-target);
+}
+
+
+
 
 h1,
 h2,
@@ -27,7 +92,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #226fb7;
+  color: #226fb7 !important;
 }
 body {
   display: block;
@@ -104,20 +169,6 @@ a:hover {
   color: black !important;
 }
 
-/*header*/
-.customNavbar {
-  height: 5rem;
-  position: fixed !important;
-  z-index: 9999 !important;
-  width: 100% !important;
-  opacity: 0.9 !important;
-  background: linear-gradient(#ffffff, #dae3f0) !important;
-}
-
-.navControll {
-  max-height: 35px;
-  padding: 0.15rem;
-}
 
 .transition:hover {
   transform: scale(1.1);
@@ -262,6 +313,9 @@ footer{
   background: rgb(246,249,251);
   background: linear-gradient(#e1e5ec, #dae3f0) !important;
 }
+.column-left, .column-right{
+  max-width: 100%;
+}
 .footer-wrapper{
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
@@ -278,20 +332,20 @@ footer{
   padding-top: 0rem !important;
 }
 @media (max-width: 570px) {
-  * {
-    font-size: 12px;
+  .tile-transition{
+    text-align: center !important;
   }
-
+/* 
   .tile-img {
     width: 50px;
-  }
+  } */
 
   #section-1-button {
     /* top: -30px; */
     position: relative;
   }
 }
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
   .tile> * {
     font-size: 14px;
   }
@@ -302,7 +356,7 @@ footer{
   .footer-wrapper{
     display: flex;
   }
-}
+} */
 @media (max-width: 850px) {
   .footer-wrapper{
     display: flex;
@@ -314,9 +368,32 @@ footer{
     gap: 1rem;
     height: auto;
   }
+  span-title-bold{
+    font-size: 330%;
+  }
 }
+
 /* .card {
 
   border: none !important;
 
 } */
+.a-tile{
+  width: 100%;
+}
+@media (min-width: 0) {
+  .always-collapsed {
+      display: none!important;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .navbar-brand{
+    width: 10rem !important;
+  }
+.menuBtn{
+  width: 1.5rem;
+    height: 1.5rem;
+}
+}

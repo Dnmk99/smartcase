@@ -31,5 +31,6 @@ function observeElements(elements) {
      
     }
   });
-  
-  
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 100) {}
+});

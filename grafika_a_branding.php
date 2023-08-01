@@ -13,28 +13,17 @@
 </head>
 
 <body>
-    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
-        <div class="container-fluid">
-            <a href="index.html"><img id="headerLogo" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset=""></a>
-            <div class="dropdown transition">
-                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
-                </a>
-                <div class="dropdown-content">
-                    <a href="" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="foto_video_sluzby.html" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.html" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="tvorba_webu.html" class="transition dropdown-item">Tvorba webů</a>
-                </div>
-            </div>
-        </div>
-    </header>
+<nav class="navbar navbarnavbar-dark bg-white sticky-top">
+    <div class="container-fluid">
+        <?php include 'includes/navbar.php' ?>
+    </div>
+</nav>
     <main>
         <div class="gb-1-bg"></div>
         <section id="strategy-section-1" class="gb-section">
             <div class="gb-row gb-row-1">
                 <div class="gb-1-row-left">
-                    <h6 style="color: #F2BA44;">NAŠE STRATEGIE</h6>
+                    <h6 style="color: #F2BA44 !important;">NAŠE STRATEGIE</h6>
                     <span-title-bold> Unikátní<br>firemní grafika</span-title-bold>
                     <br>
                     <span-title></span-title>
@@ -49,8 +38,8 @@
             </div>
             <div class="gb-row gb-1-row-2">
                 <div style="text-align: center; width: 100%;">
-                    <h6 style="color: #F2BA44;">NÁŠ TÝM</h6>
-                    <h4 style="color: #F2BA44;">Více o marketingové strategii</h4>
+                    <h6 style="color: #F2BA44 !important;">NÁŠ TÝM</h6>
+                    <h4 style="color: #F2BA44 !important;">Více o marketingové strategii</h4>
                     <span>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, <br> jak hodnotí naše služby a spolupráci s námi.</span>
                     <div ><br><br>
                         <div class="gb-grid-container" style="margin: 1rem; gap: 2rem;">
@@ -78,98 +67,45 @@
         <section id="strategy-section-2" class="gb-section-2">
             <div class="gb-row gb-row-2">
                 <div class="gb-2-row-left">
-                    <h1 style="color: #F2BA44;">01</h1>
+                    <h1 style="color: #F2BA44 !important;">01</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
                 <div class="gb-row-right">
-                    <img class="gb-img" src="Images/Graphics/marketing_strategy_01.png" alt="">
+                    <img class="gb-img" src="Images/Graphics/firm_graphics_01.png" alt="">
                 </div>
             </div>
             <div class="gb-row gb-row-2">
                 <div class="gb-row-left-1">
-                    <img class="gb-img" src="Images/Graphics/marketing_strategy_02.png" alt="">
+                    <img class="gb-img" src="Images/Graphics/firm_graphics_02.png" alt="">
                 </div>
                 <div class="gb-2-row-right-1">
-                    <h1 style="color: #F2BA44;">02</h1>
+                    <h1 style="color: #F2BA44 !important;">02</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
             </div>
             <div class="gb-row gb-row-3">
                 <div class="gb-2-row-left">
-                    <h1 style="color: #F2BA44;">03</h1>
+                    <h1 style="color: #F2BA44 !important;">03</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
                 <div class="gb-row-right">
-                    <img class="gb-img" src="Images/Graphics/marketing_strategy_03.png" alt="">
+                    <img class="gb-img" src="Images/Graphics/firm_graphics_03.png" alt="">
                 </div>
             </div>
             <div class="gb-row gb-row-4">
                 <div class="gb-row-left-2">
-                    <img class="gb-img" src="Images/Graphics/marketing_strategy_04.png" alt="">
+                    <img class="gb-img" src="Images/Graphics/firm_graphics_04.png" alt="">
                 </div>
                 <div class="gb-2-row-right-2">
-                    <h1 style="color: #F2BA44;">04</h1>
+                    <h1 style="color: #F2BA44 !important;">04</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
             </div>
         </section>
     </main>
-    <div class="wrappermargin reveal">
-        <div class="contact-container reveal active">
-            <h6 style="color: whitesmoke;">KONTAKT</h6>
-            <span class="title-bold-white">Kontaktujte</span> <br>
-            <span class="title-white">nás</span>
-
-            <div class="contactinner-container">
-                <p style="color: whitesmoke;">Máte dotaz? Pojďme se sejít a společně vše proberme!</p>
-                <a href="contact_us_subpage.html"><button type="button" class="btn btn-outline-light">Sjednat schůzku <i
-                            class="bi bi-arrow-right-short"></i></button></a>
-            </div>
-        </div>
-    </div>
-    <footer class="foot">
-        <div class="footer-wrapper">
-            <div class="footer-part-1">
-                <a href=""><img class="transition" src="Images/smartcase_logo.png" alt=""></a>
-            </div>
-            <div class="footer-part-2">
-                <a href="">
-                    <h5 class="transition">KONTAKT</h5>
-                </a>
-            </div>
-            <div class="footer-part-3">
-                <a href="">
-                    <h5 class="transition">PODMÍNKY</h5>
-                </a>
-            </div>
-            <div class="footer-part-4">
-                <a href="">
-                    <h5 class="transition">POMOC</h5>
-                </a>
-            </div>
-            <div class="footer-part-5">
-                <a href="">
-                    <h5 class="transition">ÚČET</h5>
-                </a>
-            </div>
-        </div>
-        <div class="row" style="padding: 1rem; gap: 1rem;">
-            <a href="https://www.facebook.com/SmartcaseAgency" class="transition"><img src="Images/svgs/facebook.svg"
-                    alt=""></a>
-            <a href="https://www.instagram.com/smartcase_agency/" class="transition"><img
-                    src="Images/svgs/instagram.svg" alt=""></a>
-        </div>
-        <div class="row" style="padding: 1rem;">
-            Copyright Smart Case s.r.o.
-        </div>
-    </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
-<script src="Scripts/index.js"></script>
+    <?php include 'includes/footer.php'?>
 </html>
