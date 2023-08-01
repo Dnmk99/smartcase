@@ -1,38 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
-
-<body>
-    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
-        <div class="container-fluid">
-            <a href="index.php"><img id="headerLogo" href="" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset=""></a>
-            <div class="dropdown transition">
-                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
-                </a>
-                <div class="dropdown-content">
-                    <a href="marketingove_strategie.php" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="foto_video_sluzby.php" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.php" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="tvorba_webu.php" class="transition dropdown-item">Tvorba webů</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
+<?php include 'includes/header.php' ?>
+<nav class="navbar navbarnavbar-dark bg-white sticky-top">
+    <div class="container-fluid">
+        <?php include 'includes/navbar.php' ?>
+    </div>
+</nav>
+<main>
         <div class="row" style="justify-content: space-between; padding: 1rem; gap: 3rem;">
             <div class="column-left">
                 <h6>JSME TU PRO VÁS</h6>
@@ -159,5 +131,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </html>

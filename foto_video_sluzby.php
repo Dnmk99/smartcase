@@ -13,28 +13,17 @@
 </head>
 
 <body>
-    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
-        <div class="container-fluid">
-            <a href="index.php"><img id="headerLogo" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset=""></a>
-            <div class="dropdown transition">
-                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
-                </a>
-                <div class="dropdown-content">
-                    <a href="marketingove_strategie.php" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.php" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="tvorba_webu.php" class="transition dropdown-item">Tvorba pvů</a>
-                </div>
-            </div>
-        </div>
-    </header>
+<nav class="navbar navbarnavbar-dark bg-white sticky-top">
+    <div class="container-fluid">
+        <?php include 'includes/navbar.php' ?>
+    </div>
+</nav>
     <main>
         <div class="pv-1-bg"></div>
         <section id="strategy-section-1" class="pv-section">
             <div class="pv-row pv-row-1">
                 <div class="pv-1-row-left">
-                    <h6 style="color: #49B085;">NAŠE STRATEGIE</h6>
+                    <h6 style="color: #49B085 !important;">NAŠE STRATEGIE</h6>
                     <span-title-bold>Profedionální<br>foto-video</span-title-bold>
                     <br>
                     <span-title>služby</span-title>
@@ -49,8 +38,8 @@
             </div>
             <div class="pv-row pv-1-row-2">
                 <div style="text-align: center; width: 100%;">
-                    <h6 style="color: #49B085;">NÁŠ TÝM</h6>
-                    <h4 style="color: #49B085;">Více o marketingové strategii</h4>
+                    <h6 style="color: #49B085 !important;">NÁŠ TÝM</h6>
+                    <h4 style="color: #49B085 !important;">Více o marketingové strategii</h4>
                     <span>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, <br> jak hodnotí naše služby a spolupráci s námi.</span>
                     <div ><br><br>
                         <div class="pv-grid-container" style="margin: 1rem; gap: 2rem;">
@@ -78,7 +67,7 @@
         <section id="strategy-section-2" class="pv-section-2">
             <div class="pv-row pv-row-2">
                 <div class="pv-2-row-left">
-                    <h1 style="color: #49B085;">01</h1>
+                    <h1 style="color: #49B085 !important;">01</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
@@ -91,14 +80,14 @@
                     <img class="pv-img" src="Images/PhotoVideo/photo_video_02.png" alt="">
                 </div>
                 <div class="pv-2-row-right-1">
-                    <h1 style="color: #49B085;">02</h1>
+                    <h1 style="color: #49B085 !important;">02</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
             </div>
             <div class="pv-row pv-row-3">
                 <div class="pv-2-row-left">
-                    <h1 style="color: #49B085;">03</h1>
+                    <h1 style="color: #49B085 !important;">03</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
@@ -111,7 +100,7 @@
                     <img class="pv-img" src="Images/PhotoVideo/photo_video_04.png" alt="">
                 </div>
                 <div class="pv-2-row-right-2">
-                    <h1 style="color: #49B085;">04</h1>
+                    <h1 style="color: #49B085 !important;">04</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>

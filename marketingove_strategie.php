@@ -13,22 +13,11 @@
 </head>
 
 <body>
-    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
+    <nav class="navbar navbarnavbar-dark bg-white sticky-top">
         <div class="container-fluid">
-            <a href="index.php"><img id="headerLogo" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset=""></a>
-            <div class="dropdown transition">
-                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
-                </a>
-                <div class="dropdown-content">
-                    <a href="" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="foto_video_sluzby.php" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.php" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="tvorba_webu.php" class="transition dropdown-item">Tvorba webů</a>
-                </div>
-            </div>
+            <?php include 'includes/navbar.php' ?>
         </div>
-    </header>
+    </nav>
     <main>
         <div class="ms-1-bg"></div>
         <section id="strategy-section-1" class="ms-section">
@@ -40,7 +29,8 @@
                     <span-title>plán</span-title>
                     <p>Audit aktuální situace, podle které zjistíme Váš stav a vytvoříme plán Vám přímo na míru</p>
                     <div class="ms-row-buttons">
-                        <button class="btn btn-outline-primary">Více informací<i class="bi bi-arrow-right-short"></i></button>
+                        <button class="btn btn-outline-primary">Více informací<i
+                                class="bi bi-arrow-right-short"></i></button>
                     </div>
                 </div>
                 <div class="ms-row-right">
@@ -51,22 +41,27 @@
                 <div style="text-align: center; width: 100%;">
                     <h6 style="color: #226FB7;">NÁŠ TÝM</h6>
                     <h4 style="color: #226FB7;">Více o marketingové strategii</h4>
-                    <span>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, <br> jak hodnotí naše služby a spolupráci s námi.</span>
-                    <div ><br><br>
+                    <span>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, <br> jak hodnotí naše
+                        služby a spolupráci s námi.</span>
+                    <div><br><br>
                         <div class="ms-grid-container" style="margin: 1rem; gap: 2rem;">
-                            <div class="hoverBlue ms-tile" style="background-image: url(Images/svgs/marketing-tile-1.svg);">
+                            <div class="hoverBlue ms-tile"
+                                style="background-image: url(Images/svgs/marketing-tile-1.svg);">
                                 <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
                                     a vytvoříme plán Vám přímo na míru</p>
                             </div>
-                            <div class="hoverBlue ms-tile" style="background-image: url(Images/svgs/marketing-tile-2.svg);">
+                            <div class="hoverBlue ms-tile"
+                                style="background-image: url(Images/svgs/marketing-tile-2.svg);">
                                 <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
                                     a vytvoříme plán Vám přímo na míru</p>
                             </div>
-                            <div class="hoverBlue ms-tile" style="background-image: url(Images/svgs/marketing-tile-3.svg);">
+                            <div class="hoverBlue ms-tile"
+                                style="background-image: url(Images/svgs/marketing-tile-3.svg);">
                                 <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
                                     a vytvoříme plán Vám přímo na míru</p>
                             </div>
-                            <div class="hoverBlue ms-tile" style="background-image: url(Images/svgs/marketing-tile-4.svg);">
+                            <div class="hoverBlue ms-tile"
+                                style="background-image: url(Images/svgs/marketing-tile-4.svg);">
                                 <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
                                     a vytvoříme plán Vám přímo na míru</p>
                             </div>
@@ -80,7 +75,8 @@
                 <div class="ms-2-row-left">
                     <h1 style="color: #226FB7;">01</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
+                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
+                        spolupráci s námi.</p>
                 </div>
                 <div class="ms-row-right">
                     <img class="ms-img" src="Images/MarketingStrategy/marketing_strategy_01.png" alt="">
@@ -93,14 +89,16 @@
                 <div class="ms-2-row-right-1">
                     <h1 style="color: #226FB7;">02</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
+                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
+                        spolupráci s námi.</p>
                 </div>
             </div>
             <div class="ms-row ms-row-3">
                 <div class="ms-2-row-left">
                     <h1 style="color: #226FB7;">03</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
+                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
+                        spolupráci s námi.</p>
                 </div>
                 <div class="ms-row-right">
                     <img class="ms-img" src="Images/MarketingStrategy/marketing_strategy_03.png" alt="">
@@ -113,10 +111,12 @@
                 <div class="ms-2-row-right-2">
                     <h1 style="color: #226FB7;">04</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
+                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
+                        spolupráci s námi.</p>
                 </div>
             </div>
         </section>
     </main>
-<?php include 'includes/footer.php'?>
+    <?php include 'includes/footer.php' ?>
+
 </html>

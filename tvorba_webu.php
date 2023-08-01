@@ -13,28 +13,17 @@
 </head>
 
 <body>
-    <header class="navbar customNavbar navbar-light bg-light" aria-label="">
-        <div class="container-fluid">
-            <a href="index.html"><img id="headerLogo" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset=""></a>
-            <div class="dropdown transition">
-                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
-                </a>
-                <div class="dropdown-content">
-                    <a href="marketingove_strategie.html" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="foto_video_sluzby.html" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.html" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="" class="transition dropdown-item">Tvorba webů</a>
-                </div>
-            </div>
-        </div>
-    </header>
+<nav class="navbar navbarnavbar-dark bg-white sticky-top">
+    <div class="container-fluid">
+        <?php include 'includes/navbar.php' ?>
+    </div>
+</nav>
     <main>
         <div class="web-1-bg"></div>
         <section id="strategy-section-1" class="web-section">
             <div class="web-row web-row-1">
                 <div class="web-1-row-left">
-                    <h6 style="color: #E5005A;">NAŠE STRATEGIE</h6>
+                    <h6 style="color: #E5005A !important;">NAŠE STRATEGIE</h6>
                     <span-title-bold>Webové stránky <br></span-title-bold>
                     <br>
                     <span-title>prodejní systémy</span-title>
@@ -49,8 +38,8 @@
             </div>
             <div class="web-row web-1-row-2">
                 <div style="text-align: center; width: 100%;">
-                    <h6 style="color: #E5005A;">NÁŠ TÝM</h6>
-                    <h4 style="color: #E5005A;">Více o marketingové strategii</h4>
+                    <h6 style="color: #E5005A !important;">NÁŠ TÝM</h6>
+                    <h4 style="color: #E5005A !important;">Více o marketingové strategii</h4>
                     <span>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, <br> jak hodnotí naše služby a spolupráci s námi.</span>
                     <div ><br><br>
                         <div class="web-grid-container" style="margin: 1rem; gap: 2rem;">
@@ -78,7 +67,7 @@
         <section id="strategy-section-2" class="web-section-2">
             <div class="web-row web-row-2">
                 <div class="web-2-row-left">
-                    <h1 style="color: #E5005A;">01</h1>
+                    <h1 style="color: #E5005A !important;">01</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
@@ -91,14 +80,14 @@
                     <img class="web-img" src="Images/Website/subpage_websites_02.png" alt="">
                 </div>
                 <div class="web-2-row-right-1">
-                    <h1 style="color: #E5005A;">02</h1>
+                    <h1 style="color: #E5005A !important;">02</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
             </div>
             <div class="web-row web-row-3">
                 <div class="web-2-row-left">
-                    <h1 style="color: #E5005A;">03</h1>
+                    <h1 style="color: #E5005A !important;">03</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
@@ -111,7 +100,7 @@
                     <img class="web-img" src="Images/Website/subpage_websites_04.png" alt="">
                 </div>
                 <div class="web-2-row-right-2">
-                    <h1 style="color: #E5005A;">04</h1>
+                    <h1 style="color: #E5005A !important;">04</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>

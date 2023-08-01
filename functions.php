@@ -12,7 +12,7 @@ function getAllCustomerData()
     foreach ($slides as $slide) {
         foreach ($slide as $row) {
             $url = $row['url'];
-            echo '<div class="swiper-slide"> <img src="' . $url . '" style="width: 50%;" alt="Slide Image"> </div>';
+            echo '<div class="swiper-slide"> <img src="' . $url . '" style="width: 30%;" alt="Slide Image"> </div>';
         }   //<div class="swiper-slide"> <img src="Images/Customers/FX_logo.png"></div>
     }
 }
@@ -42,10 +42,9 @@ function getAllOurWork()
     foreach ($slides as $slide) {
         foreach ($slide as $row) {
             $url = $row['url'];
-            echo '<swiper-slide class="swiper-slide-vertical">
-            <img class="swiper-slide-img-vertical" src="' . $url . '" alt="Slide Image">
-            </swiper-slide>';
-        }
+            echo '<div class="swiper-slide"> <img src="' . $url . '" style="width: 100%;
+            padding: 5rem;" alt="Slide Image"> </div>';
+        }   //<div class="swiper-slide"> <img src="Images/Customers/FX_logo.png"></div>
     }
 }
 function getAllClientRatings()
@@ -87,4 +86,3 @@ function getAllClientRatings()
 
 
 }
-?>

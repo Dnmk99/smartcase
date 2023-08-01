@@ -1,33 +1,96 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white " aria-label="Fifth navbar example">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">
-            <image src="Images/smartcase_logo.png" />
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-            aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="images/grey_button_menu.png" class="transition navbar-toggler-image" alt="">
-        </button>
-        <div class="navbar-collapse collapse" id="navbar" style="list-style-type: none; margin: 0;padding: 1rem;">
-            <ul id="navbar" class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<a class="navbar-brand" href="index.php" style="
+    margin-right: 0; padding-right: 0; 
+    align-items: center; display: flex;">
+    <img src="Images/smartcase_logo.png" width="80%" height="auto" class="d-inline-block align-top" alt="Logo">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <img class="menuBtn" src="images/grey_button_menu.png " width="30" height="30" alt="Toggle">
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+            </div>
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/blue1.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/blue2.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/blue3.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/blue4.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/yellow1.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/yellow2.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/yellow3.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/yellow4.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/green1.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/green2.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/green3.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/green4.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/red1.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/red2.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/red3.svg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a class="nav-link" href="#"><img class="transition" style="width: 3rem;" src="Images/svgIcons/red4.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
-    @media (min-width: 0) {
-        .navbar-collapse {
-            display: none !important;
-        }
+    /* Custom CSS to set the width of the left column */
+    .col-lg-9 {
+        flex: 0 0 75% !important;
+        max-width: 75% !important;
     }
+    .col-3-lg{
+        position: relative !important;
+        width: 100% !important;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+    
 </style>
-<!-- <image src="Images/smartcase_logo.png" /> -->
-<!-- <img src="images/grey_button_menu.png" class="transition navbar-toggler-image" alt=""> -->
+<!-- 
+Images/smartcase_logo.png
+images/grey_button_menu.png -->

@@ -13,29 +13,17 @@
 </head>
 
 <body>
-    <!-- <header class="navbar customNavbar navbar-light bg-light" aria-label="">
-        <div class="container-fluid">
-            <a href="index.php"><img id="headerLogo" class="header-logo transition navControll" src="Images/smartcase_logo.png"
-                alt="" srcset=""></a>
-            <div class="dropdown transition">
-                <a class="dropbtn"><img class="navControll" src="Images/grey_button_menu.png" alt="Menu">
-                </a>
-                <div class="dropdown-content">
-                    <a href="" class="transition dropdown-item">Marketingové strategie</a>
-                    <a href="foto_video_sluzby.php" class="transition dropdown-item">Foto-Video Služby</a>
-                    <a href="grafika_a_branding.php" class="transition dropdown-item">Firemní grafika</a>
-                    <a href="tvorba_webu.php" class="transition dropdown-item">Tvorba webů</a>
-                </div>
-            </div>
-        </div>
-    </header> -->
-    <?php include 'navbar' ?>
+<nav class="navbar navbarnavbar-dark bg-white sticky-top">
+    <div class="container-fluid">
+        <?php include 'includes/navbar.php' ?>
+    </div>
+</nav>
     <main>
         <div class="gb-1-bg"></div>
         <section id="strategy-section-1" class="gb-section">
             <div class="gb-row gb-row-1">
                 <div class="gb-1-row-left">
-                    <h6 style="color: #F2BA44;">NAŠE STRATEGIE</h6>
+                    <h6 style="color: #F2BA44 !important;">NAŠE STRATEGIE</h6>
                     <span-title-bold> Unikátní<br>firemní grafika</span-title-bold>
                     <br>
                     <span-title></span-title>
@@ -50,8 +38,8 @@
             </div>
             <div class="gb-row gb-1-row-2">
                 <div style="text-align: center; width: 100%;">
-                    <h6 style="color: #F2BA44;">NÁŠ TÝM</h6>
-                    <h4 style="color: #F2BA44;">Více o marketingové strategii</h4>
+                    <h6 style="color: #F2BA44 !important;">NÁŠ TÝM</h6>
+                    <h4 style="color: #F2BA44 !important;">Více o marketingové strategii</h4>
                     <span>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, <br> jak hodnotí naše služby a spolupráci s námi.</span>
                     <div ><br><br>
                         <div class="gb-grid-container" style="margin: 1rem; gap: 2rem;">
@@ -79,7 +67,7 @@
         <section id="strategy-section-2" class="gb-section-2">
             <div class="gb-row gb-row-2">
                 <div class="gb-2-row-left">
-                    <h1 style="color: #F2BA44;">01</h1>
+                    <h1 style="color: #F2BA44 !important;">01</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
@@ -92,14 +80,14 @@
                     <img class="gb-img" src="Images/Graphics/firm_graphics_02.png" alt="">
                 </div>
                 <div class="gb-2-row-right-1">
-                    <h1 style="color: #F2BA44;">02</h1>
+                    <h1 style="color: #F2BA44 !important;">02</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
             </div>
             <div class="gb-row gb-row-3">
                 <div class="gb-2-row-left">
-                    <h1 style="color: #F2BA44;">03</h1>
+                    <h1 style="color: #F2BA44 !important;">03</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
@@ -112,7 +100,7 @@
                     <img class="gb-img" src="Images/Graphics/firm_graphics_04.png" alt="">
                 </div>
                 <div class="gb-2-row-right-2">
-                    <h1 style="color: #F2BA44;">04</h1>
+                    <h1 style="color: #F2BA44 !important;">04</h1>
                     <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
                     <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a spolupráci s námi.</p>
                 </div>
