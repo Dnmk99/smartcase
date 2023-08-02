@@ -21,15 +21,15 @@
 
 
 span-title-bold{
-    font-size: 350%;
+    font-size: 210%;
     font-weight: bold;
     color: #E5005A;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 span-title{
-    font-size: 350%;
+    font-size: 210%;
     color: #E5005A;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 .web-section{
     width: 100%;
@@ -56,11 +56,7 @@ span-title{
     width: 100%;
     height: auto;
 }
-p{
-    font-size: 18px;
-    width: 80%;
-    padding-top: 1rem;
-}
+
 
 .web-1-bg {
     width: 100%;
@@ -128,31 +124,3 @@ p{
     top: 45px;
     text-align: left;
 }
-@media (min-width: 1180px) {
-    .web-tile{ height: 10rem;}
-}
-
-@media (max-width: 1180px) {
-    span{
-        font-size: 16px !important;
-    }
-    .web-tile{ height: 14rem; width: auto; }
-    .web-row{
-        flex-direction: column;
-    }
-    .web-row-left, .web-row-right{
-        width: 100%;
-    }
-    .web-row-left-1, .web-row-left-2{order: 2;}
-    .web-row-right-1, .web-row-left-2{order: 1;}
-    .web-grid-container{
-        grid-template-columns: 1fr;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    p {
-        font-size: 16px;
-        width: 80%;
-        /* padding-top: 1rem; */
-    }
-  }

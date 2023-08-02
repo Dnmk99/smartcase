@@ -23,12 +23,15 @@ function observeElements(elements) {
     return scrollPosition + windowHeight >= documentHeight; 
   }
   const targetElements = document.querySelectorAll('.reveal');
+  const targetElements_lr = document.querySelectorAll('.reveal_faster');
+  const targetElements_rl = document.querySelectorAll('.reveal_slow');
   observeElements(targetElements);
-  
+  observeElements(targetElements_lr);
+  observeElements(targetElements_rl);
   // Event listener to trigger an action when the user scrolls to the bottom of the page
   window.addEventListener('scroll', () => {
     if (isScrolledToBottom()) {
-     
+      element.classList.remove('transition', 'active');
     }
   });
   window.addEventListener("scroll", function() {

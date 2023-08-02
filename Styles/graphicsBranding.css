@@ -19,13 +19,13 @@
     scroll-behavior: smooth;
   }
 span-title-bold{
-    font-size: 350%;
+    font-size: 300%;
     font-weight: bold;
     color: #F2BA44;
     line-height: 3rem;
 }
 span-title{
-    font-size: 350%;
+    font-size: 300%;
     color: #F2BA44;
     line-height: 3rem;
 }
@@ -53,11 +53,6 @@ span-title{
 .gb-img{
     width: 100%;
     height: auto;
-}
-p{
-    font-size: 18px;
-    width: 80%;
-    padding-top: 1rem;
 }
 
 .gb-1-bg {
@@ -126,31 +121,3 @@ p{
     top: 45px;
     text-align: left;
 }
-@media (min-width: 1180px) {
-    .gb-tile{ height: 10rem;}
-}
-
-@media (max-width: 1180px) {
-    span{
-        font-size: 16px !important;
-    }
-    .gb-tile{ height: 14rem; width: auto; }
-    .gb-row{
-        flex-direction: column;
-    }
-    .gb-row-left, .gb-row-right{
-        width: 100%;
-    }
-    .gb-row-left-1, .gb-row-left-2{order: 2;}
-    .gb-row-right-1, .gb-row-left-2{order: 1;}
-    .gb-grid-container{
-        grid-template-columns: 1fr;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    p {
-        font-size: 16px;
-        width: 80%;
-        /* padding-top: 1rem; */
-    }
-  }

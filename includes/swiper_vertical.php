@@ -1,4 +1,4 @@
-<swiper-container class="mySwiper" pagination="true" pagination-clickable="false" direction="vertical"
+<swiper-container class="mySwiper reveal" pagination="true" pagination-clickable="false" direction="vertical"
     space-between="200" mousewheel="true">
     <?php
         getAllOurWork();
@@ -62,12 +62,18 @@ swiper-container {
             height: 20rem; 
             padding-top: 4rem;
         }
+        .vertical-img{
+            padding: 1rem !important;
+        }
        
     }
     @media (max-width: 550px) {
         .swiperWrap-vertical{
             height: 15rem; 
             padding-top: 4rem;
+        }
+        .vertical-img{
+            padding: 1rem !important;
         }
        
     }
@@ -76,6 +82,9 @@ swiper-container {
             height: 13rem; 
             padding-top: 4rem;
         }
+        .vertical-img{
+            padding: 1rem !important;
+        }
        
     }
     @media (max-width: 350px) {
@@ -83,7 +92,9 @@ swiper-container {
             height: 11rem; 
             padding-top: 4rem;
         }
-       
+        .vertical-img{
+            padding: 0rem !important;
+        }
     }
 
   </style><script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>

@@ -1,3 +1,6 @@
+<?php include 'functions.php' ?>
+<?php include 'subpageFunctions.php' ?>
+<?php $subpageId = 1; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,102 +24,84 @@
     <main>
         <div class="ms-1-bg"></div>
         <section id="strategy-section-1" class="ms-section">
-            <div class="ms-row ms-row-1">
-                <div class="ms-1-row-left">
-                    <h6 style="color: #226FB7;">NAŠE STRATEGIE</h6>
-                    <span-title-bold>Unikátní <br>Marketingový</span-title-bold>
-                    <br>
-                    <span-title>plán</span-title>
-                    <p>Audit aktuální situace, podle které zjistíme Váš stav a vytvoříme plán Vám přímo na míru</p>
-                    <div class="ms-row-buttons">
-                        <button class="btn btn-outline-primary">Více informací<i
-                                class="bi bi-arrow-right-short"></i></button>
-                    </div>
-                </div>
-                <div class="ms-row-right">
-                    <img class="ms-img" src="Images/MarketingStrategy/marketing_strategy.png" alt="">
+            <?php
+            echo generateSubpageHTML($subpageId, $language); 
+            ?>
+           
+            <br><br>
+            <?php
+            $descriptionData = getDescription($subpageId, $language);
+            $textAbove = $descriptionData['text_above'];
+            $textDown = $descriptionData['text_down'];
+            ?>
+            <div class="container-fluid">
+                <div class="row w-100 p-4 d-flex justify-content-center text-center">
+                    <h4>
+                        <?php echo $textAbove ?>
+                    </h4>
                 </div>
             </div>
-            <div class="ms-row ms-1-row-2">
-                <div style="text-align: center; width: 100%;">
-                    <h6 style="color: #226FB7;">NÁŠ TÝM</h6>
-                    <h4 style="color: #226FB7;">Více o marketingové strategii</h4>
-                    <span>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, <br> jak hodnotí naše
-                        služby a spolupráci s námi.</span>
-                    <div><br><br>
-                        <div class="ms-grid-container" style="margin: 1rem; gap: 2rem;">
-                            <div class="hoverBlue ms-tile"
-                                style="background-image: url(Images/svgs/marketing-tile-1.svg);">
-                                <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
-                                    a vytvoříme plán Vám přímo na míru</p>
-                            </div>
-                            <div class="hoverBlue ms-tile"
-                                style="background-image: url(Images/svgs/marketing-tile-2.svg);">
-                                <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
-                                    a vytvoříme plán Vám přímo na míru</p>
-                            </div>
-                            <div class="hoverBlue ms-tile"
-                                style="background-image: url(Images/svgs/marketing-tile-3.svg);">
-                                <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
-                                    a vytvoříme plán Vám přímo na míru</p>
-                            </div>
-                            <div class="hoverBlue ms-tile"
-                                style="background-image: url(Images/svgs/marketing-tile-4.svg);">
-                                <p class="ms-tile-text">Audit aktuální situace, podle které zjistíme Váš stav
-                                    a vytvoříme plán Vám přímo na míru</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <?php
+                        generateSubpageTile($subpageId, $language);
+                    ?>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row w-100 p-4 d-flex justify-content-center text-start">
+                    <h5>
+                        <?php echo $textDown ?>
+                    </h5>
                 </div>
             </div>
         </section>
         <section id="strategy-section-2" class="ms-section-2">
-            <div class="ms-row ms-row-2">
-                <div class="ms-2-row-left">
-                    <h1 style="color: #226FB7;">01</h1>
-                    <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
-                        spolupráci s námi.</p>
-                </div>
-                <div class="ms-row-right">
-                    <img class="ms-img" src="Images/MarketingStrategy/marketing_strategy_01.png" alt="">
-                </div>
-            </div>
-            <div class="ms-row ms-row-2">
-                <div class="ms-row-left-1">
-                    <img class="ms-img" src="Images/MarketingStrategy/marketing_strategy_02.png" alt="">
-                </div>
-                <div class="ms-2-row-right-1">
-                    <h1 style="color: #226FB7;">02</h1>
-                    <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
-                        spolupráci s námi.</p>
-                </div>
-            </div>
-            <div class="ms-row ms-row-3">
-                <div class="ms-2-row-left">
-                    <h1 style="color: #226FB7;">03</h1>
-                    <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
-                        spolupráci s námi.</p>
-                </div>
-                <div class="ms-row-right">
-                    <img class="ms-img" src="Images/MarketingStrategy/marketing_strategy_03.png" alt="">
-                </div>
-            </div>
-            <div class="ms-row ms-row-4">
-                <div class="ms-row-left-2">
-                    <img class="ms-img" src="Images/MarketingStrategy/marketing_strategy_04.png" alt="">
-                </div>
-                <div class="ms-2-row-right-2">
-                    <h1 style="color: #226FB7;">04</h1>
-                    <span-title-bold>Jak hodnotí naše služby <br>naši klienti?</span-title-bold>
-                    <p>Naše služby využívá mnoho klientů z mnoha odvětví. Přesvěčte se sami, jak hodnotí naše služby a
-                        spolupráci s námi.</p>
-                </div>
-            </div>
+        <?php
+            $sectionContent = getSectionContent($subpageId, $language);
+            $count = count($sectionContent);
+
+            for ($i = 0; $i < $count; $i++) {
+                echo '<div class="container-fluid">';
+                echo '    <div class="row w-100">';
+            
+                // Line (Text)
+                if ($i % 2 == 0) {
+                    echo '        <div class="col-md-6 text-left order-md-first order-sm-first order-first reveal_faster">';
+                    echo '            <h1 style="color: ' . $sectionContent[$i]['color'] . ' !important;">' . $sectionContent[$i]['number'] . '</h1>';
+                    echo '            <span-title-bold class="title-bold">' . $sectionContent[$i]['title'] . '</span-title-bold>';
+                    echo '            <p class="pt-2 text-left">' . $sectionContent[$i]['text'] . '</p>';
+                    echo '        </div>';
+            
+                    // Line (Image)
+                    echo '        <div class="col-md-6 order-md-last order-md-first reveal_slow">';
+                    echo '            <img class="img-fluid p-2" src="' . $sectionContent[$i]['image'] . '" alt="">';
+                    echo '        </div>';
+                } else {
+                    // Line (Image)
+                    echo '        <div class="col-md-6 order-md-first order-sm-last order-last reveal_slow">';
+                    echo '            <img class="img-fluid p-2" src="' . $sectionContent[$i]['image'] . '" alt="">';
+                    echo '        </div>';
+            
+                    // Line (Text)
+                    echo '        <div class="col-md-6 text-right order-md-last order-md-first reveal_faster">';
+                    echo '            <h1 style="color: ' . $sectionContent[$i]['color'] . ' !important;">' . $sectionContent[$i]['number'] . '</h1>';
+                    echo '            <span-title-bold class="title-bold">' . $sectionContent[$i]['title'] . '</span-title-bold>';
+                    echo '            <p class="pt-2 text-right">' . $sectionContent[$i]['text'] . '</p>';
+                    echo '        </div>';
+                }
+            
+                echo '    </div>';
+                echo '</div>';
+            }
+            ?>
         </section>
     </main>
+    
     <?php include 'includes/footer.php' ?>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js"></script>
+    <script src="Scripts/index.js"></script>
 </html>
