@@ -37,8 +37,8 @@
                         <h4><?php echo $textAbove ?></h4>
                     </div>
                 </div>
-            <div class="container-fluid">
-                <div class="row p-0 justify-content-center">
+                <div class="container-fluid">
+                <div class="row justify-content-center">
                     <?php
                         generateSubpageTile($subpageId, $language);
                     ?>

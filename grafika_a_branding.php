@@ -38,9 +38,11 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <?php
+                <div class="row justify-content-center">
+                    <?php
                         generateSubpageTile($subpageId, $language);
-                ?>
+                    ?>
+                </div>
             </div>
             <div class="container-fluid">
                 <div class="row w-100 p-4 d-flex justify-content-center text-start">

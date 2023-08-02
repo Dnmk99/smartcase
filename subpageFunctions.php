@@ -116,7 +116,7 @@ function generateSubpageTile($subpage_id, $language)
     while ($row = $result->fetch_assoc()) {
         echo '
         <div class="col-lg-6 p-2">
-            <a class="a-tile" href="marketingove_strategie.php">
+            <a class="a-tile reveal">
                 <div class="subPage_tile h-auto p-2 ' . $row['number_color_hex'] . '">
                     <div class="d-flex mb-2">
                         <div class="p-2 w-50 h-50 d-flex justify-content-left">

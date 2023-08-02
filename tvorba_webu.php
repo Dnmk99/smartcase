@@ -37,10 +37,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <?php
-                    generateSubpageTile('Images/svgIcons/red1.svg', '#E5005A', '01', 'Audit aktuální situace, podle které zjistíme Váš stav a vytvoříme plán Vám přímo na míru', 'hoverRed');
-                    generateSubpageTile('Images/svgIcons/red2.svg', '#E5005A', '02', 'Audit aktuální situace, podle které zjistíme Váš stav a vytvoříme plán Vám přímo na míru', 'hoverRed');
-                    generateSubpageTile('Images/svgIcons/red3.svg', '#E5005A', '03', 'Audit aktuální situace, podle které zjistíme Váš stav a vytvoříme plán Vám přímo na míru', 'hoverRed');
-                    generateSubpageTile('Images/svgIcons/red4.svg', '#E5005A', '04', 'Audit aktuální situace, podle které zjistíme Váš stav a vytvoříme plán Vám přímo na míru', 'hoverRed');
+                        generateSubpageTile($subpageId, $language);
                     ?>
                 </div>
             </div>
